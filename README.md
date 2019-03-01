@@ -7,6 +7,7 @@ cd in src and execute the following
 ```python
 python manage.py rename 'YourNewProjectName'
 ```
+_Do not forget that when you are going live to remove rename.py_
 
 #### App creation TODO:
 - [ ] Website app
