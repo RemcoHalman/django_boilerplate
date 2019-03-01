@@ -2,11 +2,12 @@
 
 Based of JustDjango's boilerplate tutorial but adaption is made to use for easy website setup and styling.
 
-Included in the settings
-- Easy switching Development and Deploy Settings
+##### App creation TODO:
+- [ ] Website app
+- [ ] Model creation website app
+- [ ] Admin creation website app
 
-
-##### PageStyling Todo:
+##### PageStyling TODO:
 - [ ] ColorField
 - [ ] ImageField
 - [ ] Background Image
