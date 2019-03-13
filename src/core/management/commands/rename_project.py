@@ -16,6 +16,7 @@ class Command(BaseCommand):
         files_to_rename = [
              f'{current_project_name}/settings/base.py',
              f'{current_project_name}/wsgi.py',
+             f'templates/base.html',
              'manage.py'
         ]
         folder_to_rename = f'{current_project_name}'
@@ -32,3 +33,4 @@ class Command(BaseCommand):
         os.rename(folder_to_rename, new_project_name)
 
         self.stdout.write(self.style.SUCCESS('The project has been renamed to %s' % new_project_name))
+        self.stdout.write(self.style.WARNING(f'Dont forget to capitalize all {new_project_name} tags in the html templates'))
