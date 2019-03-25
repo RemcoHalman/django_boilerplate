@@ -3,7 +3,7 @@ import os
 import sys
 
 if __name__ == '__main__':
-    # NOTE: Change the boilerplate.settings.development to boilerplate.settings.production
+    # TODO: Change the boilerplate.settings.development to boilerplate.settings.production
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'boilerplate.settings.development')
     try:
         from django.core.management import execute_from_command_line

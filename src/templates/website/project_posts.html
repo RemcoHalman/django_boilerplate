@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card-deck">
+
+    {% for portfolio_item in portfolio_items %}
+    <div class="card">
+        <img class="card-img-top" src="{{ portfolio_item.project_image.url }}" alt="Card image cap" width="300" height="300">
+        <div class="card-body">
+            <h5 class="card-title">{{ portfolio_item.title }}</h5>
+            <p class="card-text">{{ portfolio_item.content }}</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">
+                Tags :
+                {% for tag in portfolio_item.tags.all %}
+                    {{ tag.name }},
+                {% endfor %}
+            </small>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}

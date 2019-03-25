@@ -1,5 +1,11 @@
 Django==2.1.7
+django-colorfield==0.1.15
+django-crispy-forms==1.7.2
 django-debug-toolbar==1.11
+django-taggit==1.0.0
+django-tinymce==2.8.0
+Pillow==5.4.1
 python-decouple==3.1
 pytz==2018.9
-sqlparse==0.2.4
+sqlparse==0.3.0
+tzlocal==1.5.1

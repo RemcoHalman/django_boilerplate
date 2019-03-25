@@ -1,0 +1,20 @@
+#header{
+    background-color: rgb(110, 0, 0);
+    color: white;
+}
+
+#branding h1, #branding h1 a:link, #branding h1 a:visited{
+    color: white!important;
+}
+
+a:link, a:visited{
+    color: #aa686a;
+}
+
+#content-main div table caption{
+    background-color: rgb(110, 0, 0);
+}
+
+div.breadcrumbs {
+    background: #9c3e3d;
+}

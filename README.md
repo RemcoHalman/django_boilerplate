@@ -5,17 +5,23 @@ Based of JustDjango's boilerplate tutorial but adaption is made to use for easy 
 ### To rename your project
 cd in src and execute the following
 ```python
-python manage.py rename 'YourNewProjectName'
+python manage.py rename_project 'YourNewProjectName'
 ```
-_Do not forget that when you are going live to remove rename.py_
+__Do not forget that when you are going live to remove__
+* __rename_project.py__
+* __delete_user.py__
+
 
 #### App creation TODO:
-- [ ] Website app
-- [ ] Model creation website app
-- [ ] Admin creation website app
+- [x] Website app
+- [x] Model creation website app
+- [x] Admin creation website app
+- [x] Project setup Global
+- [ ] Project setup individual
 
 #### PageStyling TODO:
-- [ ] ColorField
-- [ ] ImageField
-- [ ] Background Image
+- [x] ColorField
+- [x] ImageField
+- [x] Background Image
+- [ ] Testimonial carousel
 - [ ] Background Image with Parralax scroll

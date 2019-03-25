@@ -9,6 +9,13 @@ verify_ssl = true
 django = "*"
 django-debug-toolbar = "*"
 python-decouple = "*"
+pillow = "*"
+pytz = "*"
+tzlocal = "*"
+django-crispy-forms = "*"
+django-colorfield = "*"
+django-tinymce = "*"
+django-taggit = "*"
 
 [requires]
 python_version = "3.7"

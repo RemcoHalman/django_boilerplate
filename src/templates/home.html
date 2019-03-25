@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <h1>{{ home.title }}</h1>
+    <p>{{ home.content }}</p>
+{% endblock %}
+
+
+{% block testimonials_roulette %}
+    {% for testimonial in testimonials %}
+        <div class="container-fluid testimonial" style="background-color:{{ testimonial.backgroundColor }};">
+            <div class="container text-center py-2">
+              <div class="">
+                  <i><h5 class="text-center">- {{testimonial.content}} -</h5></i>
+                  <p><img src="{{ testimonial.writer_profile_image.url }}" class="rounded-circle" alt="" width="75"/></p>
+                  <h6>{{testimonial.writer}}</h6>
+                  <small><a href="#">{{testimonial.verification_url}}</a></small>
+
+              </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
