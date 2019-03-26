@@ -7,6 +7,13 @@ cd in src and execute the following
 ```python
 python manage.py rename_project 'YourNewProjectName'
 ```
+#### Small script to generate a new secret key
+###### _Does not replace the current secretkey_
+In src folder
+```python
+python manage.py generate_secret_key
+```
+
 __Do not forget that when you are going live to remove__
 * __rename_project.py__
 * __delete_user.py__

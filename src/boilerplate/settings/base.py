@@ -3,7 +3,7 @@ from decouple import config, Csv
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = "YourSuperSecretKey"
 
 INSTALLED_APPS = [
     'django.contrib.admin',
