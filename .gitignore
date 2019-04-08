@@ -14,6 +14,9 @@ src/website/migrations/*
 *.exe
 *.o
 *.so
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Packages #
 ############
@@ -44,3 +47,14 @@ src/website/migrations/*
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Environments #
+###################
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.vscode
