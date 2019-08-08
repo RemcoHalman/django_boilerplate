@@ -6,7 +6,7 @@
     
     {% for blog_post in blog_posts %}
       <div class="card">
-        <img class="card-img-top" src="https://via.placeholder.com/304x180" alt="Card image cap">
+        <img class="card-img-top" src="{{ blog_post.background_image.url }}" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ blog_post.title }}</h5>
           <p class="card-text">{{ blog_post.content }}</p>

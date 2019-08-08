@@ -1,34 +1,25 @@
 ## Personal Django boilerplate
 
-Based of JustDjango's boilerplate tutorial but adaption is made to use for easy website setup and styling.
-
-### To rename your project
-cd in src and execute the following
-```python
-python manage.py rename_project 'YourNewProjectName'
+#### BEFORE RUNNING
+Run the initial setup
 ```
-#### Small script to generate a new secret key
-###### _Does not replace the current secretkey_
-In src folder
+./initial_setup.sh <projectname>
+```
+
+If initial setup is done execute the following command to create a admin user
+
+```python
+python manage.py create_user -a <username> <email> <password>
+```
+___
+##### Small Extra's
+###### Small script to generate a new secret key
+<small>Does not replace the current secretkey</small>
+
 ```python
 python manage.py generate_secret_key
 ```
 
-__Do not forget that when you are going live to remove__
-* __rename_project.py__
-* __delete_user.py__
-
-
-#### App creation TODO:
-- [x] Website app
-- [x] Model creation website app
-- [x] Admin creation website app
-- [x] Project setup Global
-- [ ] Project setup individual
-
-#### PageStyling TODO:
-- [x] ColorField
-- [x] ImageField
-- [x] Background Image
-- [ ] Testimonial carousel
-- [ ] Background Image with Parralax scroll
+_Do not forget that when you are going live to remove_
+* _rename_project.py_
+* _delete_user.py_
